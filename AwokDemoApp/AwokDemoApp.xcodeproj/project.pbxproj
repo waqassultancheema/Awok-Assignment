@@ -15,26 +15,15 @@
 		2901A81C21010789009DE8A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A81B21010789009DE8A9 /* main.m */; };
 		2901A82621010789009DE8A9 /* AwokDemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A82521010789009DE8A9 /* AwokDemoAppTests.m */; };
 		2901A83121010789009DE8A9 /* AwokDemoAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A83021010789009DE8A9 /* AwokDemoAppUITests.m */; };
-		2901A84221010CA7009DE8A9 /* QTActive.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A84121010CA7009DE8A9 /* QTActive.m */; };
-		2901A84521010DA7009DE8A9 /* QTActiveTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A84421010DA7009DE8A9 /* QTActiveTo.m */; };
-		2901A84821010DBF009DE8A9 /* QTExpired.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A84721010DBF009DE8A9 /* QTExpired.m */; };
-		2901A84B21010DCF009DE8A9 /* QTState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A84A21010DCF009DE8A9 /* QTState.m */; };
-		2901A84E21010E36009DE8A9 /* QTTypeProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A84D21010E36009DE8A9 /* QTTypeProduct.m */; };
-		2901A85121010E62009DE8A9 /* QTDashboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A85021010E62009DE8A9 /* QTDashboard.m */; };
-		2901A85421010E84009DE8A9 /* QTAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A85321010E84009DE8A9 /* QTAPI.m */; };
-		2901A85721010E99009DE8A9 /* QTURI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A85621010E99009DE8A9 /* QTURI.m */; };
-		2901A85A21010EAB009DE8A9 /* QTOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A85921010EAB009DE8A9 /* QTOutput.m */; };
-		2901A85D21010ED3009DE8A9 /* QTData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A85C21010ED3009DE8A9 /* QTData.m */; };
-		2901A86021010EE3009DE8A9 /* QTBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A85F21010EE3009DE8A9 /* QTBanner.m */; };
-		2901A86321010EF5009DE8A9 /* QTItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A86221010EF5009DE8A9 /* QTItem.m */; };
-		2901A86621010F06009DE8A9 /* QTCartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A86521010F06009DE8A9 /* QTCartData.m */; };
-		2901A86921010F18009DE8A9 /* QTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A86821010F18009DE8A9 /* QTColor.m */; };
-		2901A86C21010F2B009DE8A9 /* QTImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A86B21010F2B009DE8A9 /* QTImage.m */; };
-		2901A86F21010F3B009DE8A9 /* QTPrices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A86E21010F3B009DE8A9 /* QTPrices.m */; };
-		2901A87221010F68009DE8A9 /* QTEndTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A87121010F68009DE8A9 /* QTEndTime.m */; };
-		2901A87521010F78009DE8A9 /* QTSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A87421010F78009DE8A9 /* QTSection.m */; };
-		2901A87821010F92009DE8A9 /* QTNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A87721010F92009DE8A9 /* QTNavigation.m */; };
-		2901A87B21010FCC009DE8A9 /* QTStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A87A21010FCC009DE8A9 /* QTStatus.m */; };
+		2901A87E2101214F009DE8A9 /* AwokDashboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A87D2101214F009DE8A9 /* AwokDashboard.m */; };
+		2901A881210121B4009DE8A9 /* AwokNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A880210121B4009DE8A9 /* AwokNavigation.m */; };
+		2901A88421012213009DE8A9 /* AwokEndTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A88321012213009DE8A9 /* AwokEndTime.m */; };
+		2901A88721012233009DE8A9 /* AwokPrices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A88621012233009DE8A9 /* AwokPrices.m */; };
+		2901A88A21012286009DE8A9 /* AwokImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A88921012286009DE8A9 /* AwokImage.m */; };
+		2901A88D210123DC009DE8A9 /* AwokColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A88C210123DC009DE8A9 /* AwokColor.m */; };
+		2901A89021012445009DE8A9 /* AwokItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A88F21012445009DE8A9 /* AwokItem.m */; };
+		2901A893210124A2009DE8A9 /* AwokData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A892210124A2009DE8A9 /* AwokData.m */; };
+		2901A896210124E3009DE8A9 /* AwokOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901A895210124E3009DE8A9 /* AwokOutput.m */; };
 		CCA91449F032A4148196E465 /* libPods-AwokDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DD5517C2D811B994399ACF /* libPods-AwokDemoApp.a */; };
 		E8C80BC795573C26B7C5A2AB /* libPods-AwokDemoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF0BCFF512B92A06CAA4512 /* libPods-AwokDemoAppTests.a */; };
 /* End PBXBuildFile section */
@@ -72,46 +61,24 @@
 		2901A82C21010789009DE8A9 /* AwokDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwokDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2901A83021010789009DE8A9 /* AwokDemoAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwokDemoAppUITests.m; sourceTree = "<group>"; };
 		2901A83221010789009DE8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2901A84021010CA7009DE8A9 /* QTActive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTActive.h; sourceTree = "<group>"; };
-		2901A84121010CA7009DE8A9 /* QTActive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTActive.m; sourceTree = "<group>"; };
-		2901A84321010DA7009DE8A9 /* QTActiveTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTActiveTo.h; sourceTree = "<group>"; };
-		2901A84421010DA7009DE8A9 /* QTActiveTo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTActiveTo.m; sourceTree = "<group>"; };
-		2901A84621010DBF009DE8A9 /* QTExpired.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTExpired.h; sourceTree = "<group>"; };
-		2901A84721010DBF009DE8A9 /* QTExpired.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTExpired.m; sourceTree = "<group>"; };
-		2901A84921010DCF009DE8A9 /* QTState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTState.h; sourceTree = "<group>"; };
-		2901A84A21010DCF009DE8A9 /* QTState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTState.m; sourceTree = "<group>"; };
-		2901A84C21010E36009DE8A9 /* QTTypeProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTTypeProduct.h; sourceTree = "<group>"; };
-		2901A84D21010E36009DE8A9 /* QTTypeProduct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTTypeProduct.m; sourceTree = "<group>"; };
-		2901A84F21010E62009DE8A9 /* QTDashboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTDashboard.h; sourceTree = "<group>"; };
-		2901A85021010E62009DE8A9 /* QTDashboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTDashboard.m; sourceTree = "<group>"; };
-		2901A85221010E84009DE8A9 /* QTAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTAPI.h; sourceTree = "<group>"; };
-		2901A85321010E84009DE8A9 /* QTAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTAPI.m; sourceTree = "<group>"; };
-		2901A85521010E99009DE8A9 /* QTURI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTURI.h; sourceTree = "<group>"; };
-		2901A85621010E99009DE8A9 /* QTURI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTURI.m; sourceTree = "<group>"; };
-		2901A85821010EAB009DE8A9 /* QTOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTOutput.h; sourceTree = "<group>"; };
-		2901A85921010EAB009DE8A9 /* QTOutput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTOutput.m; sourceTree = "<group>"; };
-		2901A85B21010ED3009DE8A9 /* QTData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTData.h; sourceTree = "<group>"; };
-		2901A85C21010ED3009DE8A9 /* QTData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTData.m; sourceTree = "<group>"; };
-		2901A85E21010EE3009DE8A9 /* QTBanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTBanner.h; sourceTree = "<group>"; };
-		2901A85F21010EE3009DE8A9 /* QTBanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTBanner.m; sourceTree = "<group>"; };
-		2901A86121010EF5009DE8A9 /* QTItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTItem.h; sourceTree = "<group>"; };
-		2901A86221010EF5009DE8A9 /* QTItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTItem.m; sourceTree = "<group>"; };
-		2901A86421010F06009DE8A9 /* QTCartData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTCartData.h; sourceTree = "<group>"; };
-		2901A86521010F06009DE8A9 /* QTCartData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTCartData.m; sourceTree = "<group>"; };
-		2901A86721010F18009DE8A9 /* QTColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTColor.h; sourceTree = "<group>"; };
-		2901A86821010F18009DE8A9 /* QTColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTColor.m; sourceTree = "<group>"; };
-		2901A86A21010F2B009DE8A9 /* QTImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTImage.h; sourceTree = "<group>"; };
-		2901A86B21010F2B009DE8A9 /* QTImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTImage.m; sourceTree = "<group>"; };
-		2901A86D21010F3B009DE8A9 /* QTPrices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTPrices.h; sourceTree = "<group>"; };
-		2901A86E21010F3B009DE8A9 /* QTPrices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTPrices.m; sourceTree = "<group>"; };
-		2901A87021010F68009DE8A9 /* QTEndTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTEndTime.h; sourceTree = "<group>"; };
-		2901A87121010F68009DE8A9 /* QTEndTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTEndTime.m; sourceTree = "<group>"; };
-		2901A87321010F78009DE8A9 /* QTSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTSection.h; sourceTree = "<group>"; };
-		2901A87421010F78009DE8A9 /* QTSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTSection.m; sourceTree = "<group>"; };
-		2901A87621010F92009DE8A9 /* QTNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTNavigation.h; sourceTree = "<group>"; };
-		2901A87721010F92009DE8A9 /* QTNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTNavigation.m; sourceTree = "<group>"; };
-		2901A87921010FCC009DE8A9 /* QTStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTStatus.h; sourceTree = "<group>"; };
-		2901A87A21010FCC009DE8A9 /* QTStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTStatus.m; sourceTree = "<group>"; };
+		2901A87C2101214F009DE8A9 /* AwokDashboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwokDashboard.h; sourceTree = "<group>"; };
+		2901A87D2101214F009DE8A9 /* AwokDashboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwokDashboard.m; sourceTree = "<group>"; };
+		2901A87F210121B4009DE8A9 /* AwokNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwokNavigation.h; sourceTree = "<group>"; };
+		2901A880210121B4009DE8A9 /* AwokNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwokNavigation.m; sourceTree = "<group>"; };
+		2901A88221012213009DE8A9 /* AwokEndTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwokEndTime.h; sourceTree = "<group>"; };
+		2901A88321012213009DE8A9 /* AwokEndTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwokEndTime.m; sourceTree = "<group>"; };
+		2901A88521012233009DE8A9 /* AwokPrices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwokPrices.h; sourceTree = "<group>"; };
+		2901A88621012233009DE8A9 /* AwokPrices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwokPrices.m; sourceTree = "<group>"; };
+		2901A88821012286009DE8A9 /* AwokImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwokImage.h; sourceTree = "<group>"; };
+		2901A88921012286009DE8A9 /* AwokImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwokImage.m; sourceTree = "<group>"; };
+		2901A88B210123DC009DE8A9 /* AwokColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwokColor.h; sourceTree = "<group>"; };
+		2901A88C210123DC009DE8A9 /* AwokColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwokColor.m; sourceTree = "<group>"; };
+		2901A88E21012445009DE8A9 /* AwokItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwokItem.h; sourceTree = "<group>"; };
+		2901A88F21012445009DE8A9 /* AwokItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwokItem.m; sourceTree = "<group>"; };
+		2901A891210124A2009DE8A9 /* AwokData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwokData.h; sourceTree = "<group>"; };
+		2901A892210124A2009DE8A9 /* AwokData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwokData.m; sourceTree = "<group>"; };
+		2901A894210124E3009DE8A9 /* AwokOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwokOutput.h; sourceTree = "<group>"; };
+		2901A895210124E3009DE8A9 /* AwokOutput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwokOutput.m; sourceTree = "<group>"; };
 		327EC4D9934FD20BB81A3441 /* Pods-AwokDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwokDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwokDemoApp/Pods-AwokDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3718090A833152A3529DD161 /* libPods-AwokDemoAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwokDemoAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF0BCFF512B92A06CAA4512 /* libPods-AwokDemoAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwokDemoAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,46 +176,24 @@
 		2901A83E21010C7D009DE8A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2901A84021010CA7009DE8A9 /* QTActive.h */,
-				2901A84121010CA7009DE8A9 /* QTActive.m */,
-				2901A84321010DA7009DE8A9 /* QTActiveTo.h */,
-				2901A84421010DA7009DE8A9 /* QTActiveTo.m */,
-				2901A84621010DBF009DE8A9 /* QTExpired.h */,
-				2901A84721010DBF009DE8A9 /* QTExpired.m */,
-				2901A84921010DCF009DE8A9 /* QTState.h */,
-				2901A84A21010DCF009DE8A9 /* QTState.m */,
-				2901A84C21010E36009DE8A9 /* QTTypeProduct.h */,
-				2901A84D21010E36009DE8A9 /* QTTypeProduct.m */,
-				2901A84F21010E62009DE8A9 /* QTDashboard.h */,
-				2901A85021010E62009DE8A9 /* QTDashboard.m */,
-				2901A85221010E84009DE8A9 /* QTAPI.h */,
-				2901A85321010E84009DE8A9 /* QTAPI.m */,
-				2901A85521010E99009DE8A9 /* QTURI.h */,
-				2901A85621010E99009DE8A9 /* QTURI.m */,
-				2901A85821010EAB009DE8A9 /* QTOutput.h */,
-				2901A85921010EAB009DE8A9 /* QTOutput.m */,
-				2901A85B21010ED3009DE8A9 /* QTData.h */,
-				2901A85C21010ED3009DE8A9 /* QTData.m */,
-				2901A85E21010EE3009DE8A9 /* QTBanner.h */,
-				2901A85F21010EE3009DE8A9 /* QTBanner.m */,
-				2901A86121010EF5009DE8A9 /* QTItem.h */,
-				2901A86221010EF5009DE8A9 /* QTItem.m */,
-				2901A86421010F06009DE8A9 /* QTCartData.h */,
-				2901A86521010F06009DE8A9 /* QTCartData.m */,
-				2901A86721010F18009DE8A9 /* QTColor.h */,
-				2901A86821010F18009DE8A9 /* QTColor.m */,
-				2901A86A21010F2B009DE8A9 /* QTImage.h */,
-				2901A86B21010F2B009DE8A9 /* QTImage.m */,
-				2901A86D21010F3B009DE8A9 /* QTPrices.h */,
-				2901A86E21010F3B009DE8A9 /* QTPrices.m */,
-				2901A87021010F68009DE8A9 /* QTEndTime.h */,
-				2901A87121010F68009DE8A9 /* QTEndTime.m */,
-				2901A87321010F78009DE8A9 /* QTSection.h */,
-				2901A87421010F78009DE8A9 /* QTSection.m */,
-				2901A87621010F92009DE8A9 /* QTNavigation.h */,
-				2901A87721010F92009DE8A9 /* QTNavigation.m */,
-				2901A87921010FCC009DE8A9 /* QTStatus.h */,
-				2901A87A21010FCC009DE8A9 /* QTStatus.m */,
+				2901A87C2101214F009DE8A9 /* AwokDashboard.h */,
+				2901A87D2101214F009DE8A9 /* AwokDashboard.m */,
+				2901A87F210121B4009DE8A9 /* AwokNavigation.h */,
+				2901A880210121B4009DE8A9 /* AwokNavigation.m */,
+				2901A88221012213009DE8A9 /* AwokEndTime.h */,
+				2901A88321012213009DE8A9 /* AwokEndTime.m */,
+				2901A88521012233009DE8A9 /* AwokPrices.h */,
+				2901A88621012233009DE8A9 /* AwokPrices.m */,
+				2901A88821012286009DE8A9 /* AwokImage.h */,
+				2901A88921012286009DE8A9 /* AwokImage.m */,
+				2901A88B210123DC009DE8A9 /* AwokColor.h */,
+				2901A88C210123DC009DE8A9 /* AwokColor.m */,
+				2901A88E21012445009DE8A9 /* AwokItem.h */,
+				2901A88F21012445009DE8A9 /* AwokItem.m */,
+				2901A891210124A2009DE8A9 /* AwokData.h */,
+				2901A892210124A2009DE8A9 /* AwokData.m */,
+				2901A894210124E3009DE8A9 /* AwokOutput.h */,
+				2901A895210124E3009DE8A9 /* AwokOutput.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -569,28 +514,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2901A84821010DBF009DE8A9 /* QTExpired.m in Sources */,
-				2901A84221010CA7009DE8A9 /* QTActive.m in Sources */,
 				2901A81C21010789009DE8A9 /* main.m in Sources */,
-				2901A85421010E84009DE8A9 /* QTAPI.m in Sources */,
-				2901A87521010F78009DE8A9 /* QTSection.m in Sources */,
+				2901A881210121B4009DE8A9 /* AwokNavigation.m in Sources */,
+				2901A87E2101214F009DE8A9 /* AwokDashboard.m in Sources */,
+				2901A88721012233009DE8A9 /* AwokPrices.m in Sources */,
+				2901A88421012213009DE8A9 /* AwokEndTime.m in Sources */,
+				2901A89021012445009DE8A9 /* AwokItem.m in Sources */,
 				2901A80E21010788009DE8A9 /* AppDelegate.m in Sources */,
-				2901A84E21010E36009DE8A9 /* QTTypeProduct.m in Sources */,
-				2901A87821010F92009DE8A9 /* QTNavigation.m in Sources */,
-				2901A85D21010ED3009DE8A9 /* QTData.m in Sources */,
-				2901A85121010E62009DE8A9 /* QTDashboard.m in Sources */,
-				2901A87221010F68009DE8A9 /* QTEndTime.m in Sources */,
-				2901A86921010F18009DE8A9 /* QTColor.m in Sources */,
-				2901A87B21010FCC009DE8A9 /* QTStatus.m in Sources */,
-				2901A84B21010DCF009DE8A9 /* QTState.m in Sources */,
-				2901A84521010DA7009DE8A9 /* QTActiveTo.m in Sources */,
-				2901A85721010E99009DE8A9 /* QTURI.m in Sources */,
-				2901A86321010EF5009DE8A9 /* QTItem.m in Sources */,
-				2901A86C21010F2B009DE8A9 /* QTImage.m in Sources */,
-				2901A86F21010F3B009DE8A9 /* QTPrices.m in Sources */,
-				2901A86621010F06009DE8A9 /* QTCartData.m in Sources */,
-				2901A86021010EE3009DE8A9 /* QTBanner.m in Sources */,
-				2901A85A21010EAB009DE8A9 /* QTOutput.m in Sources */,
+				2901A893210124A2009DE8A9 /* AwokData.m in Sources */,
+				2901A88A21012286009DE8A9 /* AwokImage.m in Sources */,
+				2901A896210124E3009DE8A9 /* AwokOutput.m in Sources */,
+				2901A88D210123DC009DE8A9 /* AwokColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
