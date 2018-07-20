@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uoa-8m-w6r">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeFlashCollectionViewCel" id="uoa-8m-w6r" customClass="HomeFlashCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -162,6 +162,9 @@
                                             <constraint firstItem="lKx-GD-YM6" firstAttribute="top" secondItem="uoa-8m-w6r" secondAttribute="top" id="d6K-1M-Ob8"/>
                                             <constraint firstItem="lKx-GD-YM6" firstAttribute="leading" secondItem="uoa-8m-w6r" secondAttribute="leading" id="vCp-KE-f02"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="collectionView" destination="AJN-BI-4Of" id="8Uo-nC-tcm"/>
+                                        </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="UR7-Zi-6yQ" customClass="HomeCollectionViewCell">
                                         <rect key="frame" x="0.0" y="285" width="375" height="275"/>
@@ -269,6 +272,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="tkL-bK-tu5" id="EdE-xH-X6m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

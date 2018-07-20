@@ -12,6 +12,7 @@
 @interface HomeViewController ()
 
 @property (nonatomic,strong) HomeCollectionViewDataSource *dataSource;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -21,6 +22,9 @@
     [super viewDidLoad];
     
     self.dataSource = [[HomeCollectionViewDataSource alloc] init];
+    _collectionView.dataSource = self.dataSource;
+    _collectionView.delegate = self.dataSource;
+    
     
     [self sendHomeRequest];
     // Do any additional setup after loading the view.
@@ -29,10 +33,14 @@
 - (void)sendHomeRequest {
     HttpManager *manager = [[HttpManager alloc] init];
     NSDictionary *dict = [[NSDictionary alloc] init];
+    
+    __weak HomeViewController *weakSelf = self;
+
     [manager getHomeData:dict :^(id responseObject) {
-        
+        [weakSelf.collectionView reloadData];
     } failure:^(NSError *error) {
-        
+        [weakSelf.collectionView reloadData];
+
     }];
 }
 - (void)didReceiveMemoryWarning {

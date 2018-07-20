@@ -36,8 +36,10 @@
     NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys: @(2), @"PAGED", nil];
     
     [operation POST:urlStr parameters:params progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        success(responseObject);
         NSLog(@"JSON: %@", responseObject);
     } failure:^(NSURLSessionTask *operation, NSError *error) {
+        failure(error);
         NSLog(@"Error: %@", error);
     }];
 }
