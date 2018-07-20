@@ -8,7 +8,10 @@
 
 #import "HomeViewController.h"
 #import "HttpManager.h"
+#import "HomeCollectionViewDataSource.h"
 @interface HomeViewController ()
+
+@property (nonatomic,strong) HomeCollectionViewDataSource *dataSource;
 
 @end
 
@@ -17,6 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.dataSource = [[HomeCollectionViewDataSource alloc] init];
+    
+    [self sendHomeRequest];
+    // Do any additional setup after loading the view.
+}
+
+- (void)sendHomeRequest {
     HttpManager *manager = [[HttpManager alloc] init];
     NSDictionary *dict = [[NSDictionary alloc] init];
     [manager getHomeData:dict :^(id responseObject) {
@@ -24,10 +34,7 @@
     } failure:^(NSError *error) {
         
     }];
-    
-    // Do any additional setup after loading the view.
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -29,6 +29,8 @@
 		29D6719221025FD400AB194C /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D6719121025FD400AB194C /* Session.m */; };
 		29D671952102608200AB194C /* HomeSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D671942102608200AB194C /* HomeSerializer.m */; };
 		29D67199210262A100AB194C /* HTTPHeaderDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D67197210262A100AB194C /* HTTPHeaderDecorator.m */; };
+		29D671A12102658D00AB194C /* HomeCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D671A02102658D00AB194C /* HomeCollectionViewDataSource.m */; };
+		29D671A82102679D00AB194C /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D671A72102679D00AB194C /* HomeCollectionViewCell.m */; };
 		CCA91449F032A4148196E465 /* libPods-AwokDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DD5517C2D811B994399ACF /* libPods-AwokDemoApp.a */; };
 		E8C80BC795573C26B7C5A2AB /* libPods-AwokDemoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF0BCFF512B92A06CAA4512 /* libPods-AwokDemoAppTests.a */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,10 @@
 		29D671942102608200AB194C /* HomeSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSerializer.m; sourceTree = "<group>"; };
 		29D67197210262A100AB194C /* HTTPHeaderDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPHeaderDecorator.m; sourceTree = "<group>"; };
 		29D67198210262A100AB194C /* HTTPHeaderDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPHeaderDecorator.h; sourceTree = "<group>"; };
+		29D6719F2102658D00AB194C /* HomeCollectionViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewDataSource.h; sourceTree = "<group>"; };
+		29D671A02102658D00AB194C /* HomeCollectionViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewDataSource.m; sourceTree = "<group>"; };
+		29D671A62102679D00AB194C /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		29D671A72102679D00AB194C /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
 		327EC4D9934FD20BB81A3441 /* Pods-AwokDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwokDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwokDemoApp/Pods-AwokDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3718090A833152A3529DD161 /* libPods-AwokDemoAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwokDemoAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF0BCFF512B92A06CAA4512 /* libPods-AwokDemoAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwokDemoAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +226,7 @@
 			children = (
 				29D6718521025B8800AB194C /* HomeViewController.h */,
 				29D6718621025B8800AB194C /* HomeViewController.m */,
+				29D6719E2102657100AB194C /* CollectionDataSource */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -260,6 +267,25 @@
 				29D67197210262A100AB194C /* HTTPHeaderDecorator.m */,
 			);
 			path = NetworkHeaderSerialiser;
+			sourceTree = "<group>";
+		};
+		29D6719E2102657100AB194C /* CollectionDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				29D6719F2102658D00AB194C /* HomeCollectionViewDataSource.h */,
+				29D671A02102658D00AB194C /* HomeCollectionViewDataSource.m */,
+				29D671A22102676900AB194C /* HomeCollectionViewCell */,
+			);
+			path = CollectionDataSource;
+			sourceTree = "<group>";
+		};
+		29D671A22102676900AB194C /* HomeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				29D671A62102679D00AB194C /* HomeCollectionViewCell.h */,
+				29D671A72102679D00AB194C /* HomeCollectionViewCell.m */,
+			);
+			path = HomeCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		E0E4D67D3DCE9AAD35B97FE8 /* Pods */ = {
@@ -579,6 +605,7 @@
 				2901A88721012233009DE8A9 /* AwokPrices.m in Sources */,
 				2901A88421012213009DE8A9 /* AwokEndTime.m in Sources */,
 				2901A89021012445009DE8A9 /* AwokItem.m in Sources */,
+				29D671A12102658D00AB194C /* HomeCollectionViewDataSource.m in Sources */,
 				2901A80E21010788009DE8A9 /* AppDelegate.m in Sources */,
 				2901A893210124A2009DE8A9 /* AwokData.m in Sources */,
 				2901A88A21012286009DE8A9 /* AwokImage.m in Sources */,
@@ -587,6 +614,7 @@
 				2901A896210124E3009DE8A9 /* AwokOutput.m in Sources */,
 				2901A88D210123DC009DE8A9 /* AwokColor.m in Sources */,
 				29D6718721025B8800AB194C /* HomeViewController.m in Sources */,
+				29D671A82102679D00AB194C /* HomeCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,7 +33,7 @@
   
     NSString * urlStr= [NSString stringWithFormat:@"http://www.awok.com/api/home/"];
     
-    NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys: @(2), @"PAGE", nil];
+    NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys: @(2), @"PAGED", nil];
     
     [operation POST:urlStr parameters:params progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
