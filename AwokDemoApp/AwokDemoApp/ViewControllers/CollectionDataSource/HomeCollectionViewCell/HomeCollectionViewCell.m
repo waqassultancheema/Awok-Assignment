@@ -39,9 +39,9 @@
     if([item.state isEqualToString:@"UPCOMING"]) {
         self.buyLabel.text = @"Upcoming Flash Sale";
         self.buyBackgroundView.backgroundColor = [UIColor greenColor];
-        if (_isFlash){
-            _isFlash = false;
-        }
+//        if (_isFlash){
+//            _isFlash = false;
+//        }
     } else if([item.state isEqualToString:@"ACTIVE"]) {
         self.buyLabel.text = @"Add to Cart";
         self.buyBackgroundView.backgroundColor = [UIColor redColor];
