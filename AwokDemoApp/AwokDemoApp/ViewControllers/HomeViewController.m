@@ -30,7 +30,8 @@
     self.dataSource.delegate  = self;
     _collectionView.dataSource = self.dataSource;
     _collectionView.delegate = self.dataSource;
-    
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
+
     [self sendHomeRequest];
     // Do any additional setup after loading the view.
 }

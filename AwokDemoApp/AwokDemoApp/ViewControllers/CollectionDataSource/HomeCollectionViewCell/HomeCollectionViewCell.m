@@ -36,6 +36,13 @@
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:item.image.src]
                  placeholderImage:[UIImage imageNamed:@"image-placeholder.png"]];
     
+    if (item.prices.timer == nil) {
+        [self.saleTimer setHidden:true];
+    } else {
+        [self.saleTimer setHidden:false];
+
+    }
+    
     
 }
 - (IBAction)btnBuyPressed:(id)sender {
