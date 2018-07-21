@@ -10,7 +10,8 @@
 #import "HttpManager.h"
 #import "HomeCollectionViewDataSource.h"
 #import "MMMaterialDesignSpinner.h"
-@interface HomeViewController ()
+#import "UIView+Toast.h"
+@interface HomeViewController ()<HomeCollectionViewDataSourceDelegate>
 
 @property (nonatomic,strong) HomeCollectionViewDataSource *dataSource;
 @property (nonatomic,strong) MMMaterialDesignSpinner *spinnerView;
@@ -26,9 +27,9 @@
     
     [self configureActivityIndictor];
     self.dataSource = [[HomeCollectionViewDataSource alloc] init];
+    self.dataSource.delegate  = self;
     _collectionView.dataSource = self.dataSource;
     _collectionView.delegate = self.dataSource;
-    
     
     [self sendHomeRequest];
     // Do any additional setup after loading the view.
@@ -81,6 +82,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)buyButtonSelected:(NSInteger)index {
+    [self.view makeToast:@"Add to Cart"];
+
 }
 
 /*

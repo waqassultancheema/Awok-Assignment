@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+
+@protocol HomeCollectionViewDataSourceDelegate
+
+
+- (void)buyButtonSelected:(NSInteger)index;
+
+@end
 @interface HomeCollectionViewDataSource : NSObject<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic,weak) id <HomeCollectionViewDataSourceDelegate> delegate;
 
 @end

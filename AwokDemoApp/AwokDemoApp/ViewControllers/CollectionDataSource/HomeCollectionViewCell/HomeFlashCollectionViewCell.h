@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol HomeFlashCollectionViewCellDelegate
+
+
+- (void)buyButtonSelected:(NSInteger)index;
+
+@end
+
 @class AwokItem;
 @interface HomeFlashCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (weak, nonatomic) id <HomeFlashCollectionViewCellDelegate> delegate;
 
 @end

@@ -13,7 +13,7 @@
 #import "AwokDashboard.h"
 #import "AwokData.h"
 #import "AwokOutput.h"
-@interface HomeCollectionViewDataSource ()
+@interface HomeCollectionViewDataSource ()<HomeCollectionViewCellDelegate,HomeFlashCollectionViewCellDelegate>
 
 
 @end
@@ -33,11 +33,14 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if(indexPath.row == 0 ) {
         HomeFlashCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HomeFlashCollectionViewCel" forIndexPath:indexPath];
+        cell.delegate = self;
         [cell.collectionView reloadData];
         return cell;
     } else {
         HomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HomeCollectionViewCell" forIndexPath:indexPath];
         [cell setDataForCell:[[Session sharedInstance].awokhome.output.data.items objectAtIndex:indexPath.row - 1]];
+        cell.tag = indexPath.row;
+        cell.delegate = self;
         return cell;
     }
 }
@@ -53,6 +56,10 @@
         return CGSizeMake(collectionView.frame.size.width, 300);
 
     }
-    return CGSizeMake(190, 300);
+    return CGSizeMake(200, 300);
 }
+- (void)buyButtonSelected:(NSInteger)index {
+    [self.delegate buyButtonSelected:index];
+}
+
 @end

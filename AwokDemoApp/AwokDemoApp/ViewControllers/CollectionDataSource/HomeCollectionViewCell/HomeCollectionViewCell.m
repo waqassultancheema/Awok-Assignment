@@ -39,6 +39,7 @@
     
 }
 - (IBAction)btnBuyPressed:(id)sender {
+    [self.delegate buyButtonSelected:self.tag];
 }
 
 

@@ -14,7 +14,7 @@
 #import "AwokData.h"
 #import "AwokOutput.h"
 
-@interface HomeFlashCollectionViewCell ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface HomeFlashCollectionViewCell ()<UICollectionViewDelegate,UICollectionViewDataSource,HomeCollectionViewCellDelegate>
 
 
 @end
@@ -32,6 +32,8 @@
     
         HomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HomeCollectionViewCell" forIndexPath:indexPath];
         [cell setDataForCell:[[Session sharedInstance].awokFlash.output.data.items objectAtIndex:indexPath.row]];
+        cell.tag = indexPath.row;
+    cell.delegate = self;
         return cell;
     
 }
@@ -46,5 +48,9 @@
     return CGSizeMake(190, 300);
 }
 
+
+- (void)buyButtonSelected:(NSInteger)index {
+    [self.delegate buyButtonSelected:index];
+}
 
 @end
