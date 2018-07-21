@@ -36,15 +36,26 @@
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:item.image.src]
                  placeholderImage:[UIImage imageNamed:@"image-placeholder.png"]];
     
-    if (item.prices.timer == nil) {
-        [self.saleTimer setHidden:true];
+    if([item.state isEqualToString:@"UPCOMING"]) {
+        self.buyLabel.text = @"Upcoming Flash Sale";
+        self.buyBackgroundView.backgroundColor = [UIColor greenColor];
+        if (_isFlash){
+            _isFlash = false;
+        }
+    } else if([item.state isEqualToString:@"ACTIVE"]) {
+        self.buyLabel.text = @"Add to Cart";
+        self.buyBackgroundView.backgroundColor = [UIColor redColor];
+
+
     } else {
-        [self.saleTimer setHidden:false];
+        self.buyLabel.text = @"Add to Cart";
+        self.buyBackgroundView.backgroundColor = [UIColor redColor];
 
     }
-    
+    [self.saleTimer setHidden:true];
     
 }
+
 - (IBAction)btnBuyPressed:(id)sender {
     [self.delegate buyButtonSelected:self.tag];
 }
