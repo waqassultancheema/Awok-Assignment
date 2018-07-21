@@ -6,17 +6,17 @@
 //  Copyright © 2018 Waqas Sultan. All rights reserved.
 //
 
-#import "HomeSerializer.h"
+#import "FlashSerializer.h"
 #import "AwokDashboard.h"
 #import "Session.h"
 
-@implementation HomeSerializer
+@implementation FlashSerializer
 
 - (id)responseObjectForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing *)error{
     
     NSDictionary *responseDic = [super responseObjectForResponse:response data:data error:error];
     AwokDashboard *dashboard = [AwokDashboard fromJSONDictionary:responseDic];
-    [[Session sharedInstance] setAwokhome:dashboard];
+    [[Session sharedInstance] setAwokFlash:dashboard];
     return responseDic;
 }
 

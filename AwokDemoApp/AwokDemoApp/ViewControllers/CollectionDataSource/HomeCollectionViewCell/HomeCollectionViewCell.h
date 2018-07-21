@@ -14,6 +14,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleItem;
 @property (weak, nonatomic) IBOutlet UILabel *oldPrice;
 @property (weak, nonatomic) IBOutlet UILabel *currentPrice;
+@property (weak, nonatomic) IBOutlet UIView *buyBackgroundView;
+@property (weak, nonatomic) IBOutlet UILabel *buyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *saleTimer;
 
 - (void)setDataForCell:(AwokItem *)item;
 @end

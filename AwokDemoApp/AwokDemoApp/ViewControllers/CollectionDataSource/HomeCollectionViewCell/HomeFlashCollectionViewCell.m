@@ -28,16 +28,22 @@
     self.collectionView.dataSource = self;
 }
 
-- (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
         HomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HomeCollectionViewCell" forIndexPath:indexPath];
-        [cell setDataForCell:[[Session sharedInstance].awokhome.output.data.items objectAtIndex:indexPath.row]];
+        [cell setDataForCell:[[Session sharedInstance].awokFlash.output.data.items objectAtIndex:indexPath.row]];
         return cell;
+    
 }
 
-- (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [Session sharedInstance].awokhome.output.data.items.count;
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return [Session sharedInstance].awokFlash.output.data.items.count;
+    
+}
+
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return CGSizeMake(190, 300);
 }
 
 

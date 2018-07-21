@@ -12,6 +12,7 @@
 
 
 @property (nonatomic, strong) AwokDashboard *awokhome;
+@property (nonatomic, strong) AwokDashboard *awokFlash;
 
 
 + (Session*)sharedInstance;

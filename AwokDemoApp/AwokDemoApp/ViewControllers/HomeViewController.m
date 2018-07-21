@@ -37,10 +37,20 @@
     __weak HomeViewController *weakSelf = self;
 
     [manager getHomeData:dict :^(id responseObject) {
-        [weakSelf.collectionView reloadData];
+        [weakSelf sendFlashRequest:weakSelf];
     } failure:^(NSError *error) {
-        [weakSelf.collectionView reloadData];
+        [weakSelf sendFlashRequest:weakSelf];
 
+    }];
+}
+
+- (void)sendFlashRequest:(HomeViewController *)viewController {
+    HttpManager *manager = [[HttpManager alloc] init];
+    [manager getFlashData:^(id responseObject) {
+        [viewController.collectionView reloadData];
+    } failure:^(NSError *error) {
+        [viewController.collectionView reloadData];
+        
     }];
 }
 - (void)didReceiveMemoryWarning {

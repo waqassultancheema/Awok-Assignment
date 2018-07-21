@@ -15,14 +15,31 @@
 @implementation HomeCollectionViewCell
 
 
+-(void)awakeFromNib {
+    [super awakeFromNib];
+    
+    
+
+}
+
 
 - (void)setDataForCell:(AwokItem *)item {
     self.titleItem.text = item.name;
-    self.oldPrice.text = [NSString stringWithFormat:@"%ld",(long)item.prices.priceOld];
-    self.currentPrice.text = [NSString stringWithFormat:@"%ld",(long)item.prices.priceNew];
+    //self.oldPrice.text = [NSString stringWithFormat:@"%ld",(long)item.prices.priceOld];
+    
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld AED",(long)item.prices.priceOld]];
+    [attributeString addAttribute:NSStrikethroughStyleAttributeName
+                            value:@1
+                            range:NSMakeRange(0, [attributeString length])];
+    self.oldPrice.attributedText = attributeString;
+    self.currentPrice.text = [NSString stringWithFormat:@"%ld AED",(long)item.prices.priceNew];
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:item.image.src]
                  placeholderImage:[UIImage imageNamed:@"image-placeholder.png"]];
     
     
 }
+- (IBAction)btnBuyPressed:(id)sender {
+}
+
+
 @end
