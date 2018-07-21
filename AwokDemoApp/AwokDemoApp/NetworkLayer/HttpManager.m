@@ -26,23 +26,32 @@
     
 }
 
-- (void)getHomeData:(NSString *)pageNo :(void (^)(id))success failure:(void (^)(NSError *))failure {
+- (void)getHomeDataWithPageNo:(NSString *)pageNo :(void (^)(id))success failure:(void (^)(NSError *))failure {
     AFHTTPSessionManager *operation = [AFHTTPSessionManager manager];
     HTTPHeaderDecorator *decorator = [HTTPHeaderDecorator serializer];
     operation.requestSerializer = decorator;
     [operation setResponseSerializer:[HomeSerializer serializer]];
   
-    NSString * urlStr= [NSString stringWithFormat:@"http://www.awok.com/api/home/"];
+   // NSString * urlStr= [NSString stringWithFormat:@"http://www.awok.com/api/home/"];
+    //https://ae.awok.com/sources/updates/api/rpromo/page/1/
+    NSString * urlStr= [NSString stringWithFormat:@"https://ae.awok.com/sources/updates/api/rpromo/page/%@/",pageNo];
+
+    //NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys: @(2), @"PAGED", nil];
     
-    NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys: @(2), @"PAGED", nil];
-    
-    [operation POST:urlStr parameters:params progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+    [operation GET:urlStr parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         success(responseObject);
         NSLog(@"JSON: %@", responseObject);
-    } failure:^(NSURLSessionTask *operation, NSError *error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(error);
         NSLog(@"Error: %@", error);
     }];
+//    [operation POST:urlStr parameters:params progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+//        success(responseObject);
+//        NSLog(@"JSON: %@", responseObject);
+//    } failure:^(NSURLSessionTask *operation, NSError *error) {
+//        failure(error);
+//        NSLog(@"Error: %@", error);
+//    }];
 }
 
 - (void)getFlashData: (void (^)(id))success failure:(void (^)(NSError *))failure {

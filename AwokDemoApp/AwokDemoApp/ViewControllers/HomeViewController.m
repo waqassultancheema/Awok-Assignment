@@ -32,7 +32,7 @@
     _collectionView.delegate = self.dataSource;
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
 
-    [self sendHomeRequest];
+    [self sendHomeRequest:@"1"];
     // Do any additional setup after loading the view.
 }
 
@@ -53,13 +53,12 @@
     // Start & stop animations
   
 }
-- (void)sendHomeRequest {
+- (void)sendHomeRequest:(NSString *)pageNo {
     HttpManager *manager = [[HttpManager alloc] init];
-    NSDictionary *dict = [[NSDictionary alloc] init];
       [self.spinnerView startAnimating];
     __weak HomeViewController *weakSelf = self;
 
-    [manager getHomeData:dict :^(id responseObject) {
+    [manager getHomeDataWithPageNo:pageNo :^(id responseObject) {
         [weakSelf sendFlashRequest:weakSelf];
     } failure:^(NSError *error) {
         [weakSelf sendFlashRequest:weakSelf];
@@ -88,6 +87,38 @@
 -(void)buyButtonSelected:(NSInteger)index {
     [self.view makeToast:@"Add to Cart"];
 
+}
+
+-(void)loadMoreDataFromServer:(NSInteger)pageNo {
+    HttpManager *manager = [[HttpManager alloc] init];
+    [self.spinnerView startAnimating];
+    __weak HomeViewController *weakSelf = self;
+    if (pageNo > 0) {
+        NSString *pageNumber = [NSString stringWithFormat:@"%ld",pageNo];
+        [manager getHomeDataWithPageNo:pageNumber :^(id responseObject) {
+            weakSelf.dataSource.waiting = false;
+            [weakSelf.collectionView reloadData];
+            [weakSelf.spinnerView stopAnimating];
+        } failure:^(NSError *error) {
+            weakSelf.dataSource.waiting = false;
+            [weakSelf.collectionView reloadData];
+            [weakSelf.spinnerView stopAnimating];
+
+        }];
+    } else {
+        
+        NSString *pageNumber = [NSString stringWithFormat:@"%ld",pageNo];
+        [manager getHomeDataWithPageNo:pageNumber :^(id responseObject) {
+            weakSelf.dataSource.waiting = false;
+            [weakSelf.collectionView reloadData];
+            [weakSelf.spinnerView stopAnimating];
+        } failure:^(NSError *error) {
+            weakSelf.dataSource.waiting = false;
+            [weakSelf.collectionView reloadData];
+            [weakSelf.spinnerView stopAnimating];
+            
+        }];
+    }
 }
 
 /*

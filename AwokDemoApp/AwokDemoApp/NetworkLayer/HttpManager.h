@@ -12,6 +12,6 @@
 
 @interface HttpManager : NSObject
 
-- (void)getHomeData:(NSDictionary*)userDict :(void (^)(id responseObject))success failure: (void (^)(NSError *error))failure;
+- (void)getHomeDataWithPageNo:(NSString *)pageNo :(void (^)(id responseObject))success failure: (void (^)(NSError *error))failure;
 - (void)getFlashData: (void (^)(id))success failure:(void (^)(NSError *))failure;
 @end

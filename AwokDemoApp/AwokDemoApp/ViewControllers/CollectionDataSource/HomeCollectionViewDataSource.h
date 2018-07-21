@@ -14,10 +14,15 @@
 
 
 - (void)buyButtonSelected:(NSInteger)index;
+- (void)loadMoreDataFromServer:(NSInteger)pageNo;
 
 @end
 @interface HomeCollectionViewDataSource : NSObject<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic,weak) id <HomeCollectionViewDataSourceDelegate> delegate;
+@property (nonatomic) BOOL waiting;
+;
+
+
 
 @end

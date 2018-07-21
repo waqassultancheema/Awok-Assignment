@@ -13,7 +13,9 @@
 #import "AwokDashboard.h"
 #import "AwokData.h"
 #import "AwokOutput.h"
-@interface HomeCollectionViewDataSource ()<HomeCollectionViewCellDelegate,HomeFlashCollectionViewCellDelegate>
+@interface HomeCollectionViewDataSource ()<HomeCollectionViewCellDelegate,HomeFlashCollectionViewCellDelegate> {
+    NSInteger pageNo;
+}
 
 
 @end
@@ -25,7 +27,8 @@
     
     self = [super init];
     if (self) {
-
+        pageNo = 1;
+        _waiting = false;
     }
     return self;
     
@@ -39,7 +42,7 @@
         return cell;
     } else {
         HomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HomeCollectionViewCell" forIndexPath:indexPath];
-        [cell setDataForCell:[[Session sharedInstance].awokhome.output.data.items objectAtIndex:indexPath.row]];
+        [cell setDataForCell:[[Session sharedInstance].awokItems objectAtIndex:indexPath.row]];
         cell.tag = indexPath.row;
         cell.delegate = self;
         return cell;
@@ -50,7 +53,7 @@
     if(section == 0) {
         return 1;
     }
-    return [Session sharedInstance].awokhome.output.data.items.count;
+    return [Session sharedInstance].awokItems.count;
 
 }
 
@@ -100,6 +103,16 @@
         return reusableview;
     }
     return nil;
+}
+- (void)collectionView:(UICollectionView *)collectionView
+       willDisplayCell:(UICollectionViewCell *)cell
+    forItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.row == Session.sharedInstance.awokItems.count-1 && !_waiting)  {
+        _waiting = true;
+        pageNo = pageNo + 1;
+        [self.delegate loadMoreDataFromServer:pageNo];
+    }
 }
 - (void)buyButtonSelected:(NSInteger)index {
     [self.delegate buyButtonSelected:index];
