@@ -7,14 +7,13 @@
 //
 
 #import "HomeCollectionViewDataSource.h"
-#import <UIKit/UIKit.h>
 #import "HomeCollectionViewCell.h"
 #import "HomeFlashCollectionViewCell.h"
 #import "Session.h"
 #import "AwokDashboard.h"
 #import "AwokData.h"
 #import "AwokOutput.h"
-@interface HomeCollectionViewDataSource ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface HomeCollectionViewDataSource ()
 
 
 @end

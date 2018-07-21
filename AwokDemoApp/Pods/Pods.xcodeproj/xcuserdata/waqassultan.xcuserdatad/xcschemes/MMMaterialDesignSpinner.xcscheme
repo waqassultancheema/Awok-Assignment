@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31135E7ECE2F9A3CDB40A6656AB5D268"
-               BlueprintName = "Pods-AwokDemoApp"
+               BlueprintIdentifier = "536E43C88AAB25D296663FCE5387ADD4"
+               BlueprintName = "MMMaterialDesignSpinner"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-AwokDemoApp.a">
+               BuildableName = "libMMMaterialDesignSpinner.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

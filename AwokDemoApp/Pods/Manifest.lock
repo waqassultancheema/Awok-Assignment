@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - MMMaterialDesignSpinner (0.2.5)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
@@ -21,14 +22,16 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - MMMaterialDesignSpinner
   - SDWebImage (~> 4.0)
   - Toast (~> 4.0.0)
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  MMMaterialDesignSpinner: a548042720c2e5f04212048483085d7942ac3e81
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: bb5d965fb842b10f1fa82fa212a2823660b3e4a8
+PODFILE CHECKSUM: 78e45b6234f774a6415112e7cefa4a7e7707fae8
 
 COCOAPODS: 1.4.0
